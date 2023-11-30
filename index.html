@@ -3,49 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMPRESION FINAL</title>
+    <title>Mi Portafolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ff1616;
+            color: #fff;
         }
 
         header {
-            background-color: #333;
-            color: #fff;
+            background-color: #0f2a55;
+            color: #ece3e3;
             text-align: center;
-            padding: 1em;
+            padding: 1%;
+            position: relative;
+            overflow: hidden;
         }
 
-        nav {
-            background-color: #666;
-            color: #fff;
-            padding: 1em;
-        }
-
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-around;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
+        #header img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Hace que la imagen cubra completamente el contenedor */
+            display: block;
+            border-radius: 50%
         }
 
         section {
-            padding: 2em;
+            max-width: 900px;
+            margin: 0.5cm auto;
+            padding: 5em;
+            background-color: #0f2a55;
+            box-shadow: 1000px #0ca711;
+        }
+
+        #about {
+            background-color: #0f2a55; /* Verde claro */
+        }
+        #about img {
+            width: 100%;
+            height: 30%;
+            object-fit: cover; /* Hace que la imagen cubra completamente el contenedor */
+            display: block;
+        }
+
+        #projects {
+            background-color: #0f2a55; /* Verde claro */
+        }
+
+        #skills {
+            background-color: #0f2a55; /* Color de fondo predeterminado */
+        }
+
+        #contact {
+            background-color: #0f2a55; /* Color de fondo predeterminado */
         }
 
         footer {
-            background-color: #333;
-            color: #fff;
+            background-color: #001524;
+            color: #ffffff;
             text-align: center;
             padding: 1em;
             position: fixed;
@@ -56,35 +73,42 @@
 </head>
 <body>
 
-    <header>
-        <h1>IMPRESION FINAL</h1>
+    <header id="header">
+        <img class="img-titulo" src="Post Ig - Impresión Final (1) (1).jpg" alt="Img-titulo"> 
+        <h1>Andres Burbano</h1>
+        <p>mi primera chamba</p>
     </header>
-    
-    <nav>
+
+    <section id="about">
+        <img class="img-titulo" src="https://plus.unsplash.com/premium_photo-1661727319872-c394f35efc2a?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Img-titulo"> 
+        <h2>Sobre Mí</h2>
+        <p>Hola, soy [Tu Nombre]. Soy un apasionado desarrollador web. Me encanta crear cosas increíbles con código y aprender constantemente.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Proyectos Destacados</h2>
+        <p>Aquí encontrarás algunos de los proyectos en los que he trabajado. Desde sitios web simples hasta aplicaciones interactivas.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Habilidades</h2>
+        <p>Me especializo en:</p>
         <ul>
-            <li><a href="#QUIENESSOMOS">QUIENES SOMOS</a></li>
-            <li><a href="#SERVICIOS">SERVICIOS</a></li>
-            <li><a href="#CONTACTO">CONTACTO</a></li>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <!-- Agrega más habilidades según tus conocimientos -->
         </ul>
-    </nav>
-
-    <section id="seccion1">
-        <h2>Sección 1</h2>
-        <p>Contenido de la primera sección.</p>
     </section>
 
-    <section id="seccion2">
-        <h2>Sección 2</h2>
-        <p>Contenido de la segunda sección.</p>
-    </section>
-
-    <section id="seccion3">
-        <h2>Sección 3</h2>
-        <p>Contenido de la tercera sección.</p>
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme a través de [tu correo electrónico] o seguirme en [tus redes sociales]. Estoy disponible para colaboraciones y nuevos proyectos emocionantes.</p>
     </section>
 
     <footer>
-        <p>&copy; 2023 Mi Página con HTML y CSS. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Mi Portafolio. Todos los derechos reservados.</p>
     </footer>
 
 </body>
